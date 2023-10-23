@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  background: #effafa;
+}
+
+.heading-image {
+  width: 100%;
+  height: 156px;
+  background-color: #5ca5a5;
+}
+
+.heading-image-desktop {
+  display: none;
+}
+
+.container {
+  margin-top: -25px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 34px;
+}
+
+.selected-buttons-and-clear {
+  width: 327px;
+  display: flex;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  padding: 27px 23px;
+  display: none;
+  gap: 16px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.selected-buttons-div {
+  padding-right: 16px;
+  gap: 16px;
+}
+
+.clear {
+  color: #7c8f8f;
+  font-family: League Spartan;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.123px;
+  text-align: end;
+}
+
+.cards-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  row-gap: 40px;
+}
+
+.card {
+  width: 327px;
+  height: 100%;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 15px 20px -5px rgba(13, 113, 130, 0.15);
+  padding: 0 24px 24px 24px;
+}
+
+.card .logo {
+  width: 48px;
+  height: 48px;
+  margin-top: -23px;
+}
+
+.first-card {
+  margin-top: 50px;
+}
+
+.company-name {
+  color: #5ca5a5;
+  font-family: League Spartan;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.company-new-featured {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.new {
+  width: 51px;
+  height: 24px;
+  border-radius: 12px;
+  background: #5ca5a5;
+  color: #fff;
+  text-align: center;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.108px;
+  padding: 8px 7px 8px 7px;
+  margin-left: 33px;
+}
+
+.featured {
+  width: 79px;
+  height: 24px;
+  border-radius: 12px;
+  background: #2b3939;
+  color: #fff;
+  font-family: League Spartan;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: -0.108px;
+  padding: 7px 6px 8px 9px;
+  margin-left: 8px;
+}
+
+.job-position {
+  color: #2b3939;
+  font-family: League Spartan;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.postedAt-contract-location {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  margin-top: 8px;
+}
+
+.grey-dot {
+  width: 4px;
+  height: 4px;
+  background-color: #b7c4c4;
+  border-radius: 10px;
+}
+
+.grey-word {
+  color: #7c8f8f;
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.123px;
+}
+
+.grey-line {
+  width: 279px;
+  height: 1px;
+  background: #b7c4c4;
+  margin-top: 15px;
+}
+.selected-button,
+.role {
+  width: fit-content;
+  height: 32px;
+  border-radius: 4px;
+  background: #edefef;
+  padding: 6px 9px;
+  color: #5ca5a5;
+  font-family: League Spartan;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -0.123px;
+  border: none;
+}
+
+.buttons-div {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.languages,
+.tools {
+  display: flex;
+  gap: 16px;
+}
+
+.remove-button {
+  width: 32px;
+  height: 32px;
+  background-color: #5ca5a5;
+  border: none;
+  border-top-right-radius: 4px;
+}
+
+.remove-button:hover {
+  cursor: pointer;
+  background-color: #2b3939;
+  transition: 0.3s;
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding-bottom: 120px;
+  }
+
+  .selected-buttons-and-clear {
+    width: 1110px;
+    height: 72px;
+  }
+
+  .clear:hover {
+    color: #5ca5a5;
+    transition: 0.3s;
+    text-decoration-line: underline;
+  }
+
+  .heading-image-desktop {
+    display: block;
+    width: 100%;
+    height: 156px;
+    background: #5ca5a5;
+  }
+
+  .heading-image,
+  .grey-line {
+    display: none;
+  }
+
+  .card {
+    width: 1110px;
+    height: 152px;
+    display: flex;
+    align-items: center;
+    padding: 32px 35px;
+    justify-content: space-between;
+  }
+
+  .content {
+    margin-left: 24px;
+  }
+
+  .card .logo {
+    width: 88px;
+    height: 88px;
+    margin-top: 3px;
+  }
+
+  .content-and-buttonsDiv {
+    display: flex;
+    align-items: center;
+  }
+
+  .new {
+    margin-left: 15px;
+  }
+
+  .buttons-div {
+    margin-top: 0px;
+    flex-wrap: nowrap;
+  }
+
+  .company-name,
+  .grey-word {
+    font-size: 18px;
+  }
+
+  .job-position {
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  .job-position:hover {
+    color: #5ca5a5;
+    transition: 0.3s;
+  }
+
+  .tool:hover {
+    background-color: #5ca5a5;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .language:hover {
+    background-color: #5ca5a5;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .role:hover {
+    background-color: #5ca5a5;
+    color: white;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+}
